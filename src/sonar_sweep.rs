@@ -8,9 +8,9 @@ pub async fn eval(input: Vec<String>) -> Result<()> {
     Ok(())
 }
 
-
 fn parse_input(input: Vec<String>) -> Vec<i32> {
-    input.iter()
+    input
+        .iter()
         .filter(|s| !s.trim().is_empty())
         .map(|s| s.to_string().parse::<i32>().expect("always succeeds"))
         .collect()
