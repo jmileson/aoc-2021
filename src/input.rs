@@ -15,6 +15,7 @@ pub(crate) struct Opts {
 pub(crate) enum Challenge {
     Day1 = 1,
     Day2 = 2,
+    Day3 = 3,
 }
 
 impl Opts {
