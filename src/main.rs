@@ -1,3 +1,5 @@
+#![feature(drain_filter)]
+
 mod diagnostic;
 mod dive;
 mod input;
@@ -23,6 +25,6 @@ async fn main() -> Result<()> {
         Challenge::Day2 => dive::eval(challenge_input).await,
         Challenge::Day3 => diagnostic::eval(challenge_input).await,
     }?;
-    
+
     Ok(())
 }
